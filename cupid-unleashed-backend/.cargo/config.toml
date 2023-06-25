@@ -1,0 +1,10 @@
+[build]
+target = "aarch64-linux-android"
+
+[target.aarch64-linux-android]
+rustflags = ["-C", "linker=aarch64-linux-android33-clang", "-C", "link-arg=-fuse-ld=lld", "-Z", "mir-opt-level=3"]
+
+[env]
+AR_aarch64-linux-android = { value = "llvm-ar", force = true }
+CC_aarch64-linux-android = { value = "aarch64-linux-android33-clang", force = true }
+CCX_aarch64-linux-android = { value = "aarch64-linux-android33-clang++", force = true }

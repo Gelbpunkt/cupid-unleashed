@@ -1,0 +1,20 @@
+[package]
+name = "cupid-unleashed-backend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+android_logger = { version = "0.13", default-features = false }
+android_system_properties = "0.1"
+log = "0.4"
+
+[profile.release]
+codegen-units = 1
+debug = false
+incremental = false
+lto = true
+opt-level = 3
+panic = "abort"
+strip = true

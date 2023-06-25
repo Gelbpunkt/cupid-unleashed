@@ -1,0 +1,8 @@
+ui_print "***************************************"
+ui_print "*          Disclaimer:                *"
+ui_print "*   This module is provided as-is.    *"
+ui_print "* No warranty is provided or implied. *"
+ui_print "*      Use at your own risk.          *"
+ui_print "*    The developers are not liable    *"
+ui_print "*       for any damages caused.       *"
+ui_print "***************************************"
